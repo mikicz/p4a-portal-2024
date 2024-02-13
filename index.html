@@ -29,11 +29,273 @@
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <script type="application/javascript">
-        let rewardStatistics = [];
-        let anonymousStatistics = [];
-        let decimalStatistics = [];
-        let decimalWarStatistics = [];
-        let decimalWarStreamStatistics = [];
+        let rewardStatistics = [
+  {
+    "count": 83,
+    "total": 6225.0,
+    "name": "Digital Download Bundle",
+    "base_price": 75.0,
+    "percentage_of_total": 38.98177719331204
+  },
+  {
+    "count": 11,
+    "total": 1375.0,
+    "name": "P4A 2024 Merch Bundle",
+    "base_price": 125.0,
+    "percentage_of_total": 8.610432713382178
+  },
+  {
+    "count": 23,
+    "total": 1150.0,
+    "name": "Nerdfighter Art",
+    "base_price": 50.0,
+    "percentage_of_total": 7.2014528148287305
+  },
+  {
+    "count": 19,
+    "total": 950.0,
+    "name": "P4A 2024 T-Shirt: XS - 5XL",
+    "base_price": 50.0,
+    "percentage_of_total": 5.949026238336778
+  },
+  {
+    "count": 17,
+    "total": 850.0,
+    "name": "Vlogbrothers Zine (Bundle of 4)",
+    "base_price": 50.0,
+    "percentage_of_total": 5.322812950090801
+  },
+  {
+    "count": 21,
+    "total": 840.0,
+    "name": "P4A 2024 Commemorative Coin",
+    "base_price": 40.0,
+    "percentage_of_total": 5.260191621266204
+  },
+  {
+    "count": 16,
+    "total": 800.0,
+    "name": "Mystery P4A Perks",
+    "base_price": 50.0,
+    "percentage_of_total": 5.009706305967812
+  },
+  {
+    "count": 8,
+    "total": 800.0,
+    "name": "Signed Mystery John Green Book",
+    "base_price": 100.0,
+    "percentage_of_total": 5.009706305967812
+  },
+  {
+    "count": 23,
+    "total": 575.0,
+    "name": "P4A 2024 Enamel Pin",
+    "base_price": 25.0,
+    "percentage_of_total": 3.6007264074143652
+  },
+  {
+    "count": 9,
+    "total": 360.0,
+    "name": "P4A 2024 Pressed Pennies",
+    "base_price": 40.0,
+    "percentage_of_total": 2.2543678376855154
+  },
+  {
+    "count": 6,
+    "total": 360.0,
+    "name": "P4A 2024 Scarf",
+    "base_price": 60.0,
+    "percentage_of_total": 2.2543678376855154
+  },
+  {
+    "count": 19,
+    "total": 285.0,
+    "name": "Hank's First Night of Stand-up Comedy",
+    "base_price": 15.0,
+    "percentage_of_total": 1.7847078715010332
+  },
+  {
+    "count": 17,
+    "total": 255.0,
+    "name": "Two Chapters from John's New Book",
+    "base_price": 15.0,
+    "percentage_of_total": 1.5968438850272402
+  },
+  {
+    "count": 3,
+    "total": 225.0,
+    "name": "Your Name in the P4A Recap Video",
+    "base_price": 75.0,
+    "percentage_of_total": 1.4089798985534472
+  },
+  {
+    "count": 11,
+    "total": 220.0,
+    "name": "Hank and John's Raxcellent Adventure",
+    "base_price": 20.0,
+    "percentage_of_total": 1.3776692341411485
+  },
+  {
+    "count": 18,
+    "total": 216.0,
+    "name": "Crabulo.us Monthly Subscription",
+    "base_price": 12.0,
+    "percentage_of_total": 1.3526207026113095
+  },
+  {
+    "count": 8,
+    "total": 120.0,
+    "name": "Exclusive Dear Hank & John",
+    "base_price": 15.0,
+    "percentage_of_total": 0.751455945895172
+  },
+  {
+    "count": 6,
+    "total": 90.0,
+    "name": "Pressed Penny Passports",
+    "base_price": 15.0,
+    "percentage_of_total": 0.5635919594213789
+  },
+  {
+    "count": 4,
+    "total": 80.0,
+    "name": "Vlogbrothers Zine (Individual)",
+    "base_price": 20.0,
+    "percentage_of_total": 0.5009706305967813
+  },
+  {
+    "count": 4,
+    "total": 60.0,
+    "name": "Clowncast with Hank and Payton",
+    "base_price": 15.0,
+    "percentage_of_total": 0.375727972947586
+  },
+  {
+    "count": 4,
+    "total": 49.0,
+    "name": null,
+    "base_price": NaN,
+    "percentage_of_total": 0.30684451124052853
+  },
+  {
+    "count": 2,
+    "total": 44.0,
+    "name": "Hank's TikTok Drafts",
+    "base_price": 22.0,
+    "percentage_of_total": 0.2755338468282297
+  },
+  {
+    "count": 1,
+    "total": 25.0,
+    "name": "John's TikTok Drafts",
+    "base_price": 25.0,
+    "percentage_of_total": 0.15655332206149414
+  },
+  {
+    "count": 1,
+    "total": 15.0,
+    "name": "Hank's TikTok Dances",
+    "base_price": 15.0,
+    "percentage_of_total": 0.0939319932368965
+  }
+];
+        let anonymousStatistics = [
+  {
+    "count": 139,
+    "total": 14314.38,
+    "who": "Other"
+  },
+  {
+    "count": 30,
+    "total": 2364.31,
+    "who": "Anonymous"
+  }
+];
+        let decimalStatistics = [
+  {
+    "after_decimal": "00",
+    "amount": 166
+  },
+  {
+    "after_decimal": "69",
+    "amount": 2
+  },
+  {
+    "after_decimal": "31",
+    "amount": 1
+  }
+];
+        let decimalWarStatistics = [
+  {
+    "after_decimal": "69",
+    "minutes": 277.05,
+    "percentage_of_total": 68.75201627912747
+  },
+  {
+    "after_decimal": "00",
+    "minutes": 121.78,
+    "percentage_of_total": 30.220611956225028
+  },
+  {
+    "after_decimal": "38",
+    "minutes": 4.14,
+    "percentage_of_total": 1.0273717646474922
+  }
+];
+        let decimalWarStreamStatistics = [
+  {
+    "after_decimal": "69",
+    "minutes": 277.05,
+    "percentage_of_total": 68.75201627912747
+  },
+  {
+    "after_decimal": "00",
+    "minutes": 121.78,
+    "percentage_of_total": 30.220611956225028
+  },
+  {
+    "after_decimal": "38",
+    "minutes": 4.14,
+    "percentage_of_total": 1.0273717646474922
+  }
+];
+        let donationStatistics = [
+  {
+    "rewards": 1,
+    "total": 4325.0,
+    "count": 79
+  },
+  {
+    "rewards": 2,
+    "total": 4398.0,
+    "count": 46
+  },
+  {
+    "rewards": 3,
+    "total": 3366.69,
+    "count": 21
+  },
+  {
+    "rewards": 4,
+    "total": 1252.0,
+    "count": 8
+  },
+  {
+    "rewards": 6,
+    "total": 1901.0,
+    "count": 6
+  },
+  {
+    "rewards": 5,
+    "total": 1387.0,
+    "count": 5
+  },
+  {
+    "rewards": 0,
+    "total": 49.0,
+    "count": 4
+  }
+];
         let moneyFormatterParams = {"symbol": "$"};
 
         function percentage(cell, formatterParams, onRendered) {
@@ -47,25 +309,29 @@
                 height: 800,
                 columns: [
                     {"title": "Reward name", "field": "name"},
-                    {"title": "Count", "field": "count", "width": 75},
-                    {
-                        "title": "Total raised", "field": "total", "formatter": "money",
-                        "formatterParams": moneyFormatterParams, "width": 150
-                    },
-                    {
-                        "title": "Raised over base price", "field": "raised_over_base", "formatter": "money",
-                        "formatterParams": moneyFormatterParams, "width": 175
-                    },
-                    {
-                        "title": "Percentage of total", "field": "percentage_of_total", "formatter": percentage,
-                        "width": 175
-                    },
                     {
                         "title": "Base price", "field": "base_price", "formatter": "money",
                         "formatterParams": moneyFormatterParams, "width": 150
                     },
+                    {"title": "Count", "field": "count", "width": 75},
                     {
-                        "title": "Average donation", "field": "average", "formatter": "money",
+                        "title": "Total raised (minimum)", "field": "total", "formatter": "money",
+                        "formatterParams": moneyFormatterParams, "width": 250
+                    },
+                    {
+                        "title": "Approx percentage of total", "field": "percentage_of_total", "formatter": percentage,
+                        "width": 175
+                    },
+                ]
+            });
+            $("#donation-statistics").tabulator({
+                data: donationStatistics,
+                layout: "fitColumns",
+                columns: [
+                    {"title": "Rewards in donation", "field": "rewards"},
+                    {"title": "Count", "field": "count", "width": 75},
+                    {
+                        "title": "Raised", "field": "total", "formatter": "money",
                         "formatterParams": moneyFormatterParams, "width": 150
                     },
                 ]
@@ -145,6 +411,13 @@
         </button>
     </li>
     <li class="nav-item" role="presentation">
+        <button class="nav-link" id="donation-tab" data-bs-toggle="tab" data-bs-target="#donation-tab-pane"
+                type="button"
+                role="tab" aria-controls="donation-tab-pane" aria-selected="false">
+            Donation statistics
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
         <button class="nav-link" id="anonymous-tab" data-bs-toggle="tab" data-bs-target="#anonymous-tab-pane"
                 type="button"
                 role="tab" aria-controls="anonymous-tab-pane" aria-selected="false">
@@ -206,7 +479,7 @@
 
 
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -226,6 +499,11 @@ Your donation minus the perk market value of $0 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=f5321c46-75de-4278-81cd-83d5af07e464" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -238,7 +516,7 @@ Your donation minus the perk market value of $0 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -258,6 +536,11 @@ Your donation minus the perk market value of $0 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=200ad4e2-7f96-45ac-b15b-5c76dde38df5" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -270,7 +553,7 @@ Your donation minus the perk market value of $0 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -290,6 +573,11 @@ Your donation minus the perk market value of $0 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=7dfb92b5-22d1-489f-9a09-6c82fdb2c9ba" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -302,7 +590,7 @@ Your donation minus the perk market value of $0 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -322,6 +610,11 @@ Your donation minus the perk market value of $5 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=ab5e6c7c-e499-4a43-a59d-5e2c51743b44" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -334,7 +627,7 @@ Your donation minus the perk market value of $5 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -354,6 +647,11 @@ Your donation minus the perk market value of $0 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=41edc34c-f847-4d61-88e7-b3d5fba5177f" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -366,7 +664,7 @@ Your donation minus the perk market value of $0 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-limited"
+                        <div class="card card-active card-limited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -381,10 +679,15 @@ Your donation minus the perk market value of $4 is tax-deductible.
                                             </p>
                                             <button class="btn btn-sm btn-info">
     
-        847 / 850
+        844 / 850
     
 </button>
 
+
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=20c738cd-e694-4fc8-b681-a4949493dd46" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
 
 
                                         </div>
@@ -398,7 +701,7 @@ Your donation minus the perk market value of $4 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -418,6 +721,11 @@ Your donation minus the perk market value of $0 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=dc1b0d8c-4b1d-44cf-afe9-36efb24b72cb" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -430,7 +738,7 @@ Your donation minus the perk market value of $0 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -439,7 +747,7 @@ Your donation minus the perk market value of $0 is tax-deductible.
                                             <h5 class="card-title">Hank and John&#x27;s Raxcellent Adventure <small>$20.00</small>
                                             </h5>
                                             <p class="card-text">
-                                                Some things happened last year…and Hank and John still haven’t gone to Rax. If you missed out on this exclusive video perk in 2023, here&#x27;s your chance to get it this year!
+                                                Some things happened last year…and Hank and John still haven’t gone to Rax. If you missed this video perk in 2023, here&#x27;s your chance! (If you got it, you DON&#x27;T need to get it again.)
 
 Your donation minus the perk market value of $0 is tax-deductible.
                                             </p>
@@ -449,6 +757,11 @@ Your donation minus the perk market value of $0 is tax-deductible.
     
 </button>
 
+
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=933f8df9-d88b-42a9-968e-daac1bdb82be" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
 
 
                                         </div>
@@ -462,7 +775,7 @@ Your donation minus the perk market value of $0 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -482,6 +795,11 @@ Your donation minus the perk market value of $8 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=fa8b2b7d-0266-4eb5-8a21-41a615503509" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -494,7 +812,7 @@ Your donation minus the perk market value of $8 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -514,6 +832,11 @@ Your donation minus the perk market value of $0 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=bc57c418-b390-4cb7-9ad0-f04194c6bb74" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -526,7 +849,7 @@ Your donation minus the perk market value of $0 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -546,6 +869,11 @@ Your donation minus the perk market value of $0 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=eda05d55-24a2-4e80-ab4c-ee35512a6ec7" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -558,7 +886,7 @@ Your donation minus the perk market value of $0 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -578,6 +906,11 @@ Your donation minus the perk market value of $0 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=41b4fe1a-fcfc-440e-99d2-787d62bcbb7b" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -590,7 +923,7 @@ Your donation minus the perk market value of $0 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -610,6 +943,11 @@ Your donation minus the perk market value of $12 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=37066b2c-a255-420f-a386-47123bec01e7" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -622,7 +960,7 @@ Your donation minus the perk market value of $12 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -642,6 +980,11 @@ Your donation minus the perk market value of $20 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=21923638-2bbf-4e2b-a0ed-fdf513a3f88f" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -654,7 +997,7 @@ Your donation minus the perk market value of $20 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -674,6 +1017,11 @@ Your donation minus the perk market value of $20 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=14cf5d63-c2f3-448c-beab-a6fed7c30231" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -686,7 +1034,7 @@ Your donation minus the perk market value of $20 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-limited"
+                        <div class="card card-active card-limited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -701,10 +1049,15 @@ Your donation minus the perk market value of $40 is tax-deductible.
                                             </p>
                                             <button class="btn btn-sm btn-info">
     
-        389 / 400
+        384 / 400
     
 </button>
 
+
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=85786f92-b3e8-4bd1-84ff-431df66d02e3" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
 
 
                                         </div>
@@ -718,7 +1071,7 @@ Your donation minus the perk market value of $40 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-limited"
+                        <div class="card card-active card-limited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -733,10 +1086,15 @@ Your donation minus the perk market value of $28 is tax-deductible.
                                             </p>
                                             <button class="btn btn-sm btn-info">
     
-        1185 / 1200
+        1177 / 1200
     
 </button>
 
+
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=4cd93cd5-ad73-442b-ae67-496eeb517003" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
 
 
                                         </div>
@@ -750,7 +1108,7 @@ Your donation minus the perk market value of $28 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -771,6 +1129,11 @@ Your donation minus the perk market value of $30 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=201a8c0a-24ca-445c-94a0-4e01d5b0c048" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -783,7 +1146,7 @@ Your donation minus the perk market value of $30 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -803,6 +1166,11 @@ Your donation minus the perk market value of $25 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=68b13c9b-d7c4-46b9-b65b-89a73abc1ced" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -815,7 +1183,7 @@ Your donation minus the perk market value of $25 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -835,6 +1203,11 @@ Your donation minus the perk market value of $35 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=d2778fb1-00d0-4241-8d27-9b8c4271271b" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -847,7 +1220,7 @@ Your donation minus the perk market value of $35 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -867,6 +1240,11 @@ Your donation minus the perk market value of $7 is tax-deductible.
 </button>
 
 
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=ad2e7366-6b93-4092-bed4-7f713357c103" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
+
 
                                         </div>
                                     </div>
@@ -879,7 +1257,7 @@ Your donation minus the perk market value of $7 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-limited"
+                        <div class="card card-active card-limited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -894,10 +1272,15 @@ Your donation minus the perk market value of $0 is tax-deductible.
                                             </p>
                                             <button class="btn btn-sm btn-info">
     
-        58 / 60
+        57 / 60
     
 </button>
 
+
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=cadbbce6-bf7b-427c-94f6-f2a7ebed0f06" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
 
 
                                         </div>
@@ -911,7 +1294,7 @@ Your donation minus the perk market value of $0 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-limited"
+                        <div class="card card-active card-limited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -926,10 +1309,15 @@ Your donation minus the perk market value of $15 is tax-deductible.
                                             </p>
                                             <button class="btn btn-sm btn-info">
     
-        95 / 100
+        92 / 100
     
 </button>
 
+
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=54103872-8825-4eb3-aeca-e4d8aa27cf40" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
 
 
                                         </div>
@@ -943,7 +1331,7 @@ Your donation minus the perk market value of $15 is tax-deductible.
                             
                         </div>
                     
-                        <div class="card card-inactive card-unlimited"
+                        <div class="card card-active card-unlimited"
                              style="margin-bottom: 5px">
                             
                                 <div class="row">
@@ -962,6 +1350,11 @@ Your donation minus the perk market value of $96 is tax-deductible.
     
 </button>
 
+
+    <a href="https://donate.tiltify.com/+p4a-producers/project-for-awesome-2024/?rewardPublicId=dcd1a577-e906-40d4-a446-80c8b9cd0810" class="btn btn-sm btn-primary"
+       target="_blank">
+        Donate
+    </a>
 
 
                                         </div>
@@ -991,6 +1384,23 @@ Your donation minus the perk market value of $96 is tax-deductible.
                     
                     <div style="max-width: 1500px">
                         <table id="reward-statistics"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="tab-pane fade" id="donation-tab-pane" role="tabpanel" aria-labelledby="donation-tab"
+         tabindex="0">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Donation statistics</h2>
+                    
+                        <p>Data last retrieved Feb. 13, 2024, 8:50 p.m. UTC</p>
+                    
+                    <div style="max-width: 500px; margin: 0 auto;">
+                        <table id="donation-statistics"></table>
                     </div>
                 </div>
             </div>
@@ -1039,7 +1449,7 @@ Your donation minus the perk market value of $96 is tax-deductible.
                         <p>Data last retrieved Feb. 13, 2024, 8:50 p.m. UTC</p>
                     
                     <p>
-                        <abbr title="This value may not be accurate as some donations are revoked after being made.">The total on Tiltify is currently: None.</abbr>
+                        <abbr title="This value may not be accurate as some donations are revoked after being made.">The total on Tiltify is currently: 16678.69.</abbr>
                     </p>
                 </div>
             </div>
@@ -1068,7 +1478,7 @@ Your donation minus the perk market value of $96 is tax-deductible.
                     <h2>Polls</h2>
                     
                         <p>
-                            Data last retrieved Feb. 13, 2024, 8:50 p.m. UTC.
+                            Data last retrieved Feb. 13, 2024, 11:43 p.m. UTC.
                             This section shows the last available results from the API, not the final amount at time of closing.
                         </p>
                     
@@ -1118,7 +1528,7 @@ Your donation minus the perk market value of $96 is tax-deductible.
     </div>
 </div>
 <footer class="footer fixed-bottom text-center bg-light">
-    Generated: Feb. 13, 2024, 11:24 p.m. UTC.
+    Generated: Feb. 13, 2024, 11:43 p.m. UTC.
     Developed by <a href="https://twitter.com/miki_cz" target="_blank">Miki</a>,
     source on <a target="_blank" href="https://github.com/mikicz/p4a-portal">GitHub</a>.
 </footer>
